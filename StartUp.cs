@@ -198,24 +198,24 @@
                 Console.WriteLine($"{room.Pet.Name} {room.Pet.Age} {room.Pet.Kind}");
             }
 
-            //foreach (var clinic in listOfClinics)
-            //{
-            //    if (clinic.Name == input[1])
-            //    {
-            //        for (int i = 0; i < clinic.ListOfRooms.Count(); i++)
-            //        {
-            //            if (clinic.ListOfRooms[i].Number == roomNumber && clinic.ListOfRooms[i].IsEmty())
-            //            {
-            //                Console.WriteLine("Room empty");
-            //            }
+            foreach (var clinic in listOfClinics)
+            {
+                if (clinic.Name == input[1])
+                {
+                    for (int i = 0; i < clinic.ListOfRooms.Count(); i++)
+                    {
+                        if (clinic.ListOfRooms[i].Number == roomNumber && clinic.ListOfRooms[i].IsEmty())
+                        {
+                           Console.WriteLine("Room empty");
+                        }
 
-            //            else if (clinic.ListOfRooms[i].Number == roomNumber && !clinic.ListOfRooms[i].IsEmty())
-            //            {
-            //                Console.WriteLine($"{clinic.ListOfRooms[i].Pet.Name} {clinic.ListOfRooms[i].Pet.Age} {clinic.ListOfRooms[i].Pet.Name}");
-            //            }
-            //        }
-            //    }
-            //}
+                        else if (clinic.ListOfRooms[i].Number == roomNumber && !clinic.ListOfRooms[i].IsEmty())
+                        {
+                            Console.WriteLine($"{clinic.ListOfRooms[i].Pet.Name} {clinic.ListOfRooms[i].Pet.Age} {clinic.ListOfRooms[i].Pet.Name}");
+                        }
+                   }
+                }
+            }
         }
     }
 }
